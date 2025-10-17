@@ -34,7 +34,7 @@ private DriveTrain m_driveTrain;
   @Override
   public void execute() {
     //Set the variables in terms of the inputs received from joystick every 20ms
-    double speed = m_joystick.getRawAxis(3);
+    double speed = m_joystick.getRawAxis(1);
     double turn = m_joystick.getRawAxis(4);
     double left = speed + turn;
     double right = speed - turn;
