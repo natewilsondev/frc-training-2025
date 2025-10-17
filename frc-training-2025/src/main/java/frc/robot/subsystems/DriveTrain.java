@@ -33,8 +33,8 @@ public class DriveTrain extends SubsystemBase {
     m_talonLeft.setNeutralMode(NeutralMode.Brake); 
     m_talonRight.setNeutralMode(NeutralMode.Brake);
 
-    m_talonLeft.follow(m_victorRight);
-    m_talonRight.follow(m_victorLeft);
+    m_victorRight.follow(m_talonLeft);
+    m_victorLeft.follow(m_talonRight);
 
     m_talonRight.setInverted(true);
     m_talonRight.setInverted(true);

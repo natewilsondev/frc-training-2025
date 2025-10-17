@@ -6,10 +6,13 @@ package frc.robot.constants;
 
 /** Add your docs here. */
 public class DriveConstants {
+    //Primary
+    public final static int kTalonLeftChannel = 6;
+    public final static int kTalonRightChannel = 3;
+    //Secondary
+    public final static int kVictorLeftChannel = 8;
+    public final static int kVictorRightChannel = 7;
 
-    public final static int kTalonLeftChannel = 0;
-    public final static int kTalonRightChannel = 0;
-    public final static int kVictorLeftChannel = 0;
-    public final static int kVictorRightChannel = 0;
-
+    
+    
 }
