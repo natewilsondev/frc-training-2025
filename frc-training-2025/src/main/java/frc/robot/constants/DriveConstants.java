@@ -14,7 +14,7 @@ public class DriveConstants {
     public final static int kVictorRightChannel = 7;
 
     public static double kSpeed = 0.1;
-    public static double kTimeInSeconds = 30;
+    public static double kTimeInSeconds = 15;
 
     
     
