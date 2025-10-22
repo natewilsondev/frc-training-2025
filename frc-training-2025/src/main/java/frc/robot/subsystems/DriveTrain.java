@@ -37,7 +37,7 @@ public class DriveTrain extends SubsystemBase {
     m_victorLeft.follow(m_talonRight);
 
     m_talonRight.setInverted(true);
-    m_talonRight.setInverted(true);
+    m_victorRight.setInverted(true);
   
   }
 
