@@ -42,7 +42,7 @@ public class RobotContainer {
     m_driveTrain.setDefaultCommand(m_arcadeDriveTrain);
 
     SendableRegistry.add(m_moveForDistance.getSendable(), "MoveForDistance");
-    Shuffleboard.getTab("SmartDashboard").add(m_moveForDistance.getSendable());
+    Shuffleboard.getTab("SmartDashboard").add(m_moveForDistance.getSendable()).withWidget("MoveForDistance");
   }
 
   private void configureBindings() {}

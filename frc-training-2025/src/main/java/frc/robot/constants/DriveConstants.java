@@ -20,8 +20,8 @@ public class DriveConstants {
     public static double kTimeInSeconds = 15;
     public static double kDistanceInFeet;
 
-    
-    public static double kWheelCircumfrence;
+    public static double kWheelDiamterInFeet = 6;
+    public static double kWheelCircumfrence = Math.PI * kWheelDiamterInFeet;
     public static double kTicksPerWheelRotation;
 
     //Mult: for ArcadeDriveTrain
