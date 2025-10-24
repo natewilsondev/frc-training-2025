@@ -38,7 +38,7 @@ public class DriveTrain extends SubsystemBase {
 
     m_talonRight.setInverted(true);
     m_victorRight.setInverted(true);
-  
+
   }
 
 
@@ -69,4 +69,10 @@ public class DriveTrain extends SubsystemBase {
   public double getRight() {
     return m_talonRight.get();
   }
+  public double getEncoderTicksRight() {
+    return m_talonRight.getSelectedSensorPosition();
+  } 
+  public double getEncoderTicksLeft() {
+    return m_talonLeft.getSelectedSensorPosition();
+  } 
 }

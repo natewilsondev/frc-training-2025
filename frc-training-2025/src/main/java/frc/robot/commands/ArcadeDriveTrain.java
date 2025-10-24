@@ -6,6 +6,7 @@ package frc.robot.commands;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj2.command.Command;
+import frc.robot.constants.DriveConstants;
 import frc.robot.constants.IOConstants;
 import frc.robot.subsystems.DriveTrain;
 
@@ -34,8 +35,8 @@ private DriveTrain m_driveTrain;
   @Override
   public void execute() {
     //Set the variables in terms of the inputs received from joystick every 20ms
-    double speed = m_joystick.getRawAxis(1);
-    double turn = m_joystick.getRawAxis(4);
+    double speed = m_joystick.getRawAxis(1) * DriveConstants.kspeedMultiplier;
+    double turn = m_joystick.getRawAxis(4) * DriveConstants.kspeedMultiplier;
     double left = speed + turn;
     double right = speed - turn;
     //Set the speed based on the turn --- the left and right wheels turn at different speeds so that the robot can turn properly

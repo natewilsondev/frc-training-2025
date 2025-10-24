@@ -13,8 +13,21 @@ public class DriveConstants {
     public final static int kVictorLeftChannel = 8;
     public final static int kVictorRightChannel = 7;
 
-    public static double kSpeed = 0.1;
+    //Speed:for MoveForTime and MoveForDistance
+    //Time: for MoveForTime
+    //Distance: for MoveForDistance
+    public static double kSpeed = 0.5;
     public static double kTimeInSeconds = 15;
+    public static double kDistanceInFeet;
+
+    
+    public static double kWheelCircumfrence;
+    public static double kTicksPerWheelRotation;
+
+    //Mult: for ArcadeDriveTrain
+    public static double kspeedMultiplier = 0.5;
+    
+
 
     
     
