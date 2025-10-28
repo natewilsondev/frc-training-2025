@@ -18,11 +18,11 @@ public class DriveConstants {
     //Distance: for MoveForDistance
     public static double kSpeed = 0.5;
     public static double kTimeInSeconds = 15;
-    public static double kDistanceInFeet;
+    public static double kDistanceInFeet = 10;
 
-    public static double kWheelDiamterInFeet = 6;
-    public static double kWheelCircumfrence = Math.PI * kWheelDiamterInFeet;
-    public static double kTicksPerWheelRotation;
+    public static double kWheelDiameterInFeet = 5.0 / 12.0;
+    public static double kWheelCircumfrence = Math.PI * kWheelDiameterInFeet;
+    public static double kTicksPerWheelRotation = 2048;
 
     //Mult: for ArcadeDriveTrain
     public static double kspeedMultiplier = 0.5;
